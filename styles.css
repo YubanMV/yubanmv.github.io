@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general del body - Modo claro (por defecto) */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 80px; /* Ajusta según el tamaño de tu header */
+
+}
+
+/* Header - Modo claro */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+  background-color: #fff; /* Color de fondo (puedes ajustarlo al color del tema) */
+  color: #333; /* Color del texto (puedes ajustarlo al color del tema) */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el fondo y color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Agrega sombra para destacarlo */
+}
+
+
+
+.header-left {
+  display: flex;
+  gap: 15px;
+}
+.header-left a i {
+  font-size: 1.5rem; /* Ajusta el tamaño del icono */
+}
+
+
+.header-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Botón para cambiar de idioma */
+.language-switch {
+  display: flex;
+  gap: 10px;
+}
+
+.language-btn {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #333;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.language-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* Contenedor del tema: switch y icono al lado */
+.theme-switch {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre el switch y el icono */
+}
+
+/* Botón para el cambio de tema */
+.theme-switch-button {
+  background-color: #ccc;
+  border: none;
+  border-radius: 15px;
+  width: 50px;
+  height: 25px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.theme-switch-button .slider {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: 0.3s;
+}
+
+/* Cuando está activo, el slider se mueve */
+.theme-switch-button.active .slider {
+  left: 27px;
+}
+
+/* Menú de navegación */
+.header-right ul {
+  list-style: none;
+  display: flex;
+}
+
+.header-right ul li {
+  margin-left: 1.5rem;
+}
+
+.header-right ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.header-right ul li a:hover {
+  color: #0077b5;
+}
+
+/* Sección perfil */
+.perfil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;  /* Limita el ancho total */
+  margin: 0 auto;     /* Centra el contenedor en la página */
+}
+
+.perfil-texto {
+  flex: 1;
+  padding-right: 20px;
+  text-align: left;   /* El texto dentro se alinea a la izquierda */
+}
+
+.perfil-texto h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.perfil-texto p {
+  font-size: 1.25rem;
+}
+
+.perfil-texto .resumen-perfil {
+  font-size: 2rem;  /* Aumenta el tamaño de letra para el resumen */
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.perfil-imagen {
+  flex: 0 0 220px;
+  display: flex;
+  justify-content: center;  /* Centra la imagen en su contenedor */
+}
+
+.foto-perfil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ccc;
+}
+
+/* Sección Proyectos - Modo claro */
+#proyectos {
+  padding: 2rem;
+}
+
+#proyectos h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.proyecto-tarjeta {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+  flex: 1;
+  text-align: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto-tarjeta h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.proyecto-tarjeta p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.proyecto-tarjeta a {
+  color: #0077b5;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.proyecto-tarjeta a:hover {
+  color: #005f8d;
+}
+
+.proyectos-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.proyecto-imagen {
+  display: block;
+  width: 100%;
+  height: 350px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.proyecto-imagen img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                       OVERRIDES PARA EL MODO OSCURO                      */
+/* Se activan al añadir la clase "dark-mode" al <body>                        */
+/* -------------------------------------------------------------------------- */
+
+body.dark-mode {
+  background-color: #2e2e2e; /* Fondo oscuro suave */
+  color: #ccc;             /* Texto claro pero menos agresivo */
+}
+
+body.dark-mode header {
+  background-color: #3a3a3a; /* Header ligeramente más claro que el body oscuro */
+  color: #ccc;
+}
+
+body.dark-mode .header-right ul li a {
+  color: #ccc;
+}
+
+body.dark-mode .header-right ul li a:hover {
+  color: #4caf50; /* Verde suave como acento */
+}
+body.dark-mode .language-btn {
+  color: #fff; /* Cambia a blanco en el modo oscuro */
+}
+
+body.dark-mode .header-left a {
+  color: #00ff00; /* Cambia los iconos a verde neón en el modo oscuro */
+}
+
+body.dark-mode .header-left a:hover {
+  color: #00b300; /* Un verde más oscuro al hacer hover */
+}
+
+body.dark-mode .language-btn {
+  border-color: #ccc;
+}
+
+body.dark-mode .language-btn:hover {
+  background-color: #555;
+}
+
+/* Proyectos en modo oscuro */
+body.dark-mode .proyecto-tarjeta {
+  background-color: #444; /* Fondo de la tarjeta en modo oscuro */
+  color: #ccc;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .proyecto-tarjeta:hover {
+  background-color: #555;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .proyecto-tarjeta a {
+  color: #4caf50; /* Acente suave para enlaces en modo oscuro */
+}
+
+body.dark-mode .proyecto-tarjeta a:hover {
+  color: #81c784;
+}
+
+/* Ajuste del switch para el modo oscuro */
+body.dark-mode .theme-switch-button {
+  background-color: #00ff00; /* Fondo verde suave en modo oscuro */
+}
+
+body.dark-mode .theme-switch-button .slider {
+  left: 27px; /* Slider en posición activa */
+}
+
+/* Ajuste del icono del tema */
+#theme-icon {
+  font-size: 1.5rem;
+  color: #3933ff; /* Verde más suave para modo claro */
+  transition: color 0.3s;
+}
+
+body.dark-mode #theme-icon {
+  color: #00ff00; /* Icono blanco en modo oscuro */
+}

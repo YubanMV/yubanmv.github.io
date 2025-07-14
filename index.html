@@ -1,1 +1,250 @@
-Hello World
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuban Martínez | Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <a href="https://linkedin.com/in/yubanmartinez" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/yubanmartinez" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="cv.pdf" target="_blank"><i class="fas fa-file-alt"></i></a>
+            <a href="mailto:yuban@example.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <h1 class="header-title">Yuban Martinez</h1>
+        <nav class="header-right">
+            <div class="theme-switch">
+                <button id="theme-toggle" class="theme-switch-button">
+                    <span class="slider"></span>
+                </button>
+                <i id="theme-icon" class="fas fa-sun"></i> <!-- Icono al lado del switch -->
+            </div>
+            <div class="language-switch">
+                <button id="btn-es" class="language-btn">ES</button>
+                <button id="btn-en" class="language-btn">EN</button>
+            </div>
+            <ul>
+                <li><a href="#perfil" id="nav-perfil">Perfil</a></li>
+                <li><a href="#proyectos" id="nav-proyectos">Proyectos</a></li>
+                <li><a href="#contacto" id="nav-contacto">Contacto</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+
+    <head>
+
+        <main>
+            <section id="perfil" class="perfil">
+                <!-- Contenido en Español -->
+                <div id="es">
+                    <h2>Ingeniero en Robótica</h2>
+                    <p class="resumen-perfil">Resumen de perfil</p>
+                    <p><strong>Yuban Martinez,</strong> Zacatecas, México</p>
+                    <p>Soy ingeniero en mecatrónica y robótica con especialidad en programación, inteligencia artificial
+                        y visión por computadora.</p>
+                </div>
+                <!-- Contenido en Inglés (Oculto al inicio) -->
+                <div id="en" style="display: none;">
+                    <h2>Robotics Engineer</h2>
+                    <p class="resumen-perfil">Profile Summary</p>
+                    <p><strong>Yuban Martinez,</strong> Zacatecas, Mexico</p>
+                    <p>I am a mechatronics and robotics engineer with a specialization in programming, artificial
+                        intelligence, and computer vision.</p>
+                </div>
+                <div class="perfil-imagen">
+                    <img src="assets/profile.jpg" alt="Foto de Yuban Martínez" class="foto-perfil">
+                </div>
+            </section>
+
+
+
+            <section id="proyectos" class="centered-section">
+                <!-- Contenido en Español -->
+                <div id="es-proyectos">
+                    <h2>Proyectos</h2>
+
+                    <div class="proyectos-row">
+                        <!-- Proyecto 1 -->
+                        <div class="proyecto-tarjeta" data-images="proyecto1.png">
+                            <h3>Simulación de control PD de dron</h3>
+                            <p>Simulación de un controlador PD aplicado al control de la orientación de un dron, con el
+                                objetivo de estabilizar el sistema dinámico.</p>
+                            <div class="proyecto-imagen">
+                                <img src="assets/" alt="Simulación de control PD de dron">
+                            </div>
+                            <a href="link_del_proyecto_1" target="_blank">Ver proyecto</a>
+                        </div>
+
+                        <!-- Proyecto 2 -->
+                        <div class="proyecto-tarjeta"
+                            data-images="assets/projects/tangentBug/img1.png, assets/projects/tangentBug/img2.png, assets/projects/tangentBug/img3.png">
+                            <h3>Algoritmo Tangent Bug para DDR</h3>
+                            <p>Implementación de un algoritmo Tangent Bug para la navegación de un robot móvil
+                                diferencial,
+                                evitando obstáculos en un entorno no estructurado.</p>
+                            <div class="proyecto-imagen">
+                                <img src="assets/projects/tangentBug/img1.png" alt="Algoritmo Tangent Bug para DDR">
+                            </div>
+                            <a href="link_del_proyecto_2" target="_blank">Ver proyecto</a>
+                        </div>
+                    </div>
+
+                    <div class="proyectos-row">
+                        <!-- Proyecto 3 -->
+                        <div class="proyecto-tarjeta" data-images="assets/projects/homotopy/input.png, assets/projects/homotopy/homotopyPlot.png, assets/projects/homotopy/chuasCircuit.png">
+                            <h3>Método de Continuación Homotópica para Resolución de Sistemas No Lineales</h3>
+                            <p>Desarrollo e implementación del método de continuación homotópica para resolver sistemas
+                                no
+                                lineales de manera eficiente y precisa.</p>
+                            <div class="proyecto-imagen">
+                                <img src="assets/projects/homotopy/input.png" alt="Método de Continuación Homotópica">
+                            </div>
+                            <a href="link_del_proyecto_3" target="_blank">Ver proyecto</a>
+                        </div>
+
+                        <!-- Proyecto 4 -->
+                        <div class="proyecto-tarjeta"
+                            data-images="assets/projects/HPPM/img1.png, assets/projects/HPPM/img2.png, assets/projects/HPPM/img3.png">
+                            <h3>Método de Continuación Homotópica para Planificación de Trayectorias</h3>
+                            <p>Aplicación del método de continuación homotópica para la planificación de trayectorias de
+                                robots móviles en entornos complejos.</p>
+                            <div class="proyecto-imagen">
+                                <img src="assets/projects/HPPM/img1.png" alt="Planificación de Trayectorias">
+                            </div>
+                            <a href="link_del_proyecto_4" target="_blank">Ver proyecto</a>
+                        </div>
+                    </div>
+
+                    <div class="proyectos-row">
+                        <!-- Proyecto 5 -->
+                        <div class="proyecto-tarjeta"
+                            data-images="assets/projects/rrt/rrtStar.png, assets/projects/rrt/img2.png, assets/projects/rrt/img3.png">
+                            <h3>Simulación de Planificación de Movimientos con RRT*</h3>
+                            <p>Implementación de algoritmo de planificación de movimientos para robots móviles
+                                utilizando
+                                RRT* (Rapidly-exploring Random Trees) para encontrar trayectorias optimizadas.</p>
+                            <div class="proyecto-imagen">
+                                <img src="assets/projects/rrt/rrtStar.png" alt="Motion Planning Simulation with RRT*">
+                            </div>
+                            <a href="link_del_proyecto_5" target="_blank">Ver proyecto</a>
+                        </div>
+
+                        <!-- Proyecto 6 -->
+                        <div class="proyecto-tarjeta" data-images="imagen_proyecto_6.jpg">
+                            <h3>Clasificador de Galaxias con CNN</h3>
+                            <p>Entrenamiento de una red neuronal convolucional (CNN) utilizando Keras para clasificar
+                                galaxias a partir de datos obtenidos mediante web scraping de imágenes astronómicas.</p>
+                            <div class="proyecto-imagen">
+                                <img src="imagen_proyecto_6.jpg" alt="Clasificador de Galaxias con CNN">
+                            </div>
+                            <a href="link_del_proyecto_6" target="_blank">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenido en Inglés (Oculto al inicio) -->
+                <div id="en-proyectos" style="display: none;">
+                    <h2>Projects</h2>
+
+                    <div class="proyectos-row">
+                        <!-- Project 1 -->
+                        <div class="proyecto-tarjeta">
+                            <h3>Drone PD Control Simulation</h3>
+                            <p>Simulation of a PD controller applied to drone orientation control, aiming to stabilize
+                                the dynamic system.</p>
+                            <div class="proyecto-imagen">
+                                <img src="assets/proyecto1.png" alt="Drone PD Control Simulation">
+                            </div>
+                            <a href="link_del_proyecto_1" target="_blank">View Project</a>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="proyecto-tarjeta"
+                            data-images="assets/projects/tangentBug/img1.png, assets/projects/tangentBug/img2.png, assets/projects/tangentBug/img3.png">
+                            <h3>Tangent Bug algorithm for DDR</h3>
+                            <p>
+                                Implementation of a Tangent Bug algorithm for the navigation of a differential mobile
+                                robot, avoiding obstacles in an unstructured environment.
+                            </p>
+                            <div class="proyecto-imagen">
+                                <img src="assets/projects/tangentBug/img1.png" alt="Tangent Bug algorithm for DDR">
+                            </div>
+                            <a href="link_del_proyecto_2" target="_blank">View Project</a>
+                        </div>
+
+                    </div>
+
+                    <div class="proyectos-row">
+                        <!-- Project 3 -->
+                        <div class="proyecto-tarjeta"
+                            data-images="assets/projects/homotopy/input.png, assets/projects/homotopy/homotopyPlot.png, assets/projects/homotopy/chuasCircuit.png">
+                            <h3>Homotopy Continuation Method for Solving Nonlinear Systems</h3>
+                            <p>Development and implementation of the homotopy continuation method to efficiently and
+                                accurately solve nonlinear systems.</p>
+                            <div class="proyecto-imagen">
+                                <img src="assets/projects/homotopy/input.png" alt="Homotopy Continuation Method">
+                            </div>
+                            <a href="link_del_proyecto_3" target="_blank">View Project</a>
+                        </div>
+
+                        <!-- Project 4 -->
+                        <div class="proyecto-tarjeta" ,
+                            data-images="assets/projects/HPPM/img1.png, assets/projects/HPPM/img2.png, assets/projects/HPP/img3.png">
+                            >
+                            <h3>Homotopy Continuation Method for Trajectory Planning</h3>
+                            <p>Application of the homotopy continuation method for trajectory planning of mobile robots
+                                in complex environments.</p>
+                            <div class="proyecto-imagen">
+                                <img src="assets/projects/HPPM/img1.png" alt="Trajectory Planning">
+                            </div>
+                            <a href="link_del_proyecto_4" target="_blank">View Project</a>
+                        </div>
+                    </div>
+
+                    <div class="proyectos-row">
+                        <!-- Project 5 -->
+                        <div class="proyecto-tarjeta"
+                            data-images="assets/projects/rrt/rrtStar.png, assets/projects/rrt/img2.png, assets/projects/rrt/img3.png">
+                            <h3>Motion Planning Simulation with RRT*</h3>
+                            <p>Implementation of a motion planning algorithm for mobile robots using RRT*
+                                (Rapidly-exploring Random Trees) to find optimized trajectories.</p>
+                            <div class="proyecto-imagen">
+                                <img src="assets/projects/rrt/rrtStar.png" alt="Motion Planning Simulation with RRT*">
+                            </div>
+                            <a href="link_del_proyecto_5" target="_blank">View Project</a>
+                        </div>
+
+                        <!-- Project 6 -->
+                        <div class="proyecto-tarjeta">
+                            <h3>Galaxy Classifier with CNN</h3>
+                            <p>Training a convolutional neural network (CNN) using Keras to classify galaxies from data
+                                obtained through web scraping of astronomical images.</p>
+                            <div class="proyecto-imagen">
+                                <img src="imagen_proyecto_6.jpg" alt="Galaxy Classifier with CNN">
+                            </div>
+                            <a href="link_del_proyecto_6" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <script src="script.js"></script>
+</body>
+
+</html>
